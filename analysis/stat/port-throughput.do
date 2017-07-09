@@ -1,0 +1,1 @@
+{"code":0,"data":{"echarts":{"legend":{"data":["吴兴港区","南浔港区","德清港区","长兴港区","安吉港湾"]},"series":[{"data":[{"name":"吴兴港区","value":1.7360896E7},{"name":"南浔港区","value":8285503.0},{"name":"德清港区","value":1.8849629E7},{"name":"长兴港区","value":3.4088644E7},{"name":"安吉港湾","value":6284533.0}],"name":"码头吞吐量","type":"pie"}]},"totalContainer":121085.0,"totalThroughput":8.4869205E7}}

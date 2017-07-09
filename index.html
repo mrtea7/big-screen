@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PC数据中心大屏</title>
+    <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/mybootstrap.css">
+    <link rel="stylesheet" href="./assets/style/layout.css">
+</head>
+<body>
+<!--头部-->
+<header class="container-head">
+    <div class="into"><img src="./assets/img/into.png"></div>
+</header>
+<!--主体-->
+<div class="container-main">
+    <!--左边start-->
+    <div class="container-left">
+        <div class="container-left-top">
+            <div class="container-chartBox" id="chartBox1">
+                <div class="chartBox-head">
+                    <div class="chartBox-head-title"></div>
+                    <div class="chartBox-head-subtitle">
+                    </div>
+                </div>
+                <div class="chartBox-content">
+                    <div class="chartBox-content-bread">
+                    </div>
+                    <div class="chartBox-content-chart--onenav">
+                        <div class="chart-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-left-middle">
+            <div class="container-chartBox">
+                <div class="chartBox-head">
+                    <div class="chartBox-head-title"></div>
+                    <div class="chartBox-head-subtitle"></div>
+                </div>
+                <div class="chartBox-content">
+                    <div class="chartBox-content-bread"></div>
+                    <div class="chartBox-content-loop">
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="wx btn btn-loop loop-active" data-id="wx">吴兴区</button>-->
+                        <!--<button type="button" class="nx btn btn-loop" data-id="nx">南浔区</button>-->
+                        <!--<button type="button" class="dq btn btn-loop" data-id="dq">德清县</button>-->
+                        <!--<button type="button" class="cx btn btn-loop" data-id="cx">长兴县</button>-->
+                        <!--<button type="button" class="aj btn btn-loop" data-id="aj">安吉县</button>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="chartBox-content-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-left-bottom">
+            <div class="container-chartBox" id="chartBox3">
+                <div class="chartBox-head">
+                    <div class="chartBox-head-title"></div>
+                    <div class="chartBox-head-subtitle"></div>
+                </div>
+                <div class="chartBox-content">
+                    <div class="chartBox-content-bread">
+                    </div>
+                    <div class="chartBox-content-loop">
+                        <div class="btn-group">
+                        <button type="button" class="wx btn btn-loop loop-active" data-id="wx">吴兴区</button>
+                        <button type="button" class="nx btn btn-loop" data-id="nx">南浔区</button>
+                        <button type="button" class="dq btn btn-loop" data-id="dq">德清县</button>
+                        <button type="button" class="cx btn btn-loop" data-id="cx">长兴县</button>
+                        <button type="button" class="aj btn btn-loop" data-id="aj">安吉县</button>
+                        </div>
+                    </div>
+                    <div class="chartBox-content-chart--nonav"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--左边end-->
+    <!--中间start-->
+    <div class="container-middle">
+        <div class="container-middle-top">
+            <div class="container-middle-top-map">
+                <div class="map">
+                    <div class="map-img">
+                        <img src="./assets/img/map-now.png" alt="">
+                    </div>
+                    <div class="map-arrow">
+                        <img src="./assets/img/arrow.png">
+                    </div>
+                    <div class="map-cutline">
+                        <img src="./assets/img/cutline-now.png">
+                    </div>
+
+                    <div class="map-button">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-bread active" id="now">现状图</button>
+                            <button type="button" class="btn btn-bread" id="fu">规划图</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-middle-top-button">
+                <div>
+                    <img class="basic-btn" src="./assets/img/basic-act.png">
+                </div>
+                <div>
+                    <img class="equip-btn" src="./assets/img/equip-nor.png">
+                </div>
+                <div>
+                    <img class="trans-btn" src="./assets/img/trans-nor.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="container-middle-bottom">
+            <div class="container-middle-bottom--left">
+                <div class="container-chartBox"></div>
+            </div>
+            <div class="container-middle-bottom--right">
+                <div class="container-chartBox"></div>
+            </div>
+        </div>
+    </div>
+    <!--中间end-->
+    <!--右侧start-->
+    <div class="container-right">
+        <div class="container-right-top">
+            <div class="container-chartBox"></div>
+        </div>
+        <div class="container-right-middle">
+            <div class="container-chartBox"></div>
+        </div>
+        <div class="container-right-bottom">
+            <div class="container-chartBox"></div>
+        </div>
+    </div>
+    <!--右侧end-->
+</div>
+</body>
+<script src="assets/lib/jquery.min.js"></script>
+<script src="assets/lib/echarts.common.min.js"></script>
+<script src="assets/js/constant.js"></script>
+<script src="assets/js/chartSetting.js"></script>
+<script src="assets/js/road.js"></script>
+<script src="assets/js/piovt.js"></script>
+<script src="assets/js/b.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

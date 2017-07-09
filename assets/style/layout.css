@@ -1,0 +1,236 @@
+/*
+目录
+container 整体布局
+chartBox  图表盒子布局
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    color: #01E9FD;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px){
+    html,body {
+        height: 100%;
+        font-size: 66.67%;
+    }
+}
+@media screen and (min-width: 1364px) and (max-width: 1599px){
+    html,body {
+        height: 100%;
+        font-size: 71.14%;
+    }
+    .chartBox-head-subtitle{
+        flex: 3.6 !important;
+        padding-right: 4% !important;
+        transform: scale(0.80);
+        transform-origin: 100%;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px){
+    html,body {
+        height: 100%;
+        font-size: 83.33%;
+    }
+}
+@media screen and (min-width:1920px) and (max-width: 2735px){
+    html,body {
+        height: 100%;
+        font-size: 100%;
+    }
+}
+@media screen and (min-width:2736px){
+    html,body {
+        height: 100%;
+        font-size: 142.5%;
+    }
+}
+html, body {
+    background: url("../img/background.png");
+    background-size: 100% 100%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*container 整体布局*/
+.container-main{
+    display: flex;
+    height: 100%;
+}
+.container-left,
+.container-middle,
+.container-right {
+    display: flex;
+    height: calc(100% - 10vh);
+
+}
+
+.container-head {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+}
+.into{
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.container-left,
+.container-right {
+    flex: 1;
+    flex-direction: column;
+}
+
+.container-middle {
+    flex: 2;
+    flex-direction: column;
+}
+
+.container-left-top,
+.container-left-middle,
+.container-left-bottom,
+.container-right-top,
+.container-right-middle,
+.container-right-bottom {
+    flex: 1;
+}
+
+.container-middle-top {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.container-middle-top-map{
+    flex: 9;
+}
+.map{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.map-img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+.map-arrow{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+.map-cutline{
+    position: absolute;
+    top: 66%;
+    left: 40%;
+    bottom: 0;
+    width: 100%;
+}
+.map-button{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 100%;
+}
+.container-middle-top-button{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-middle-top-button >div{
+    width: 15%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.container-middle-bottom {
+    flex: 1;
+    display: flex;
+}
+
+.container-middle-bottom--left,
+.container-middle-bottom--right {
+    flex: 1;
+}
+/*chartBox  图表盒子布局*/
+.container-chartBox {
+    width: 96%;
+    height: 96%;
+    margin: 0 3%;
+    background: url("../img/box-frame.png");
+    background-size: 100% 100%;
+}
+.container-chartBox--light {
+    width: 96%;
+    height: 96%;
+    margin: 0 3%;
+    background: url("../img/light.png");
+    background-size: 100% 100%;
+}
+.chartBox-head{
+    display: flex;
+    align-items: flex-end;
+    height: 12%;
+    cursor: pointer;
+}
+.chartBox-head-title{
+    display:flex;
+    align-items:center;
+    flex: 1;
+    padding-left: 4%;
+    height: 85%;
+    font-size: 1.2rem;
+
+}
+.chartBox-head-subtitle{
+    flex: 1.8;
+    height: 66%;
+    padding-right: 3%;
+    font-size: 0.8rem;
+    text-align: right;
+
+}
+.chartBox-content {
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+}
+.chartBox-content-bread,.chartBox-content-loop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chartBox-content-bread{
+    height: 15%;
+}
+.chartBox-content-loop{
+    height: 10%;
+}
+.chartBox-content-chart{
+    height: 75%;
+    padding: 0 2% 1% 1%;
+}
+.chartBox-content-chart--onenav{
+    height: 90%;
+    padding: 0 2% 1% 1%;
+
+}
+.chartBox-content-chart--nonav{
+    height: 100%;
+    padding: 0 2% 1% 1%;
+}
+.chart-content {
+    width: 200%;
+    height: 200%;
+    transform:  scale(0.50);
+    transform-origin: 0 0;
+}
+

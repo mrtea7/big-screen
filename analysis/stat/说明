@@ -1,0 +1,11 @@
+road 公路
+bridge-tunnel 桥隧
+piovt.do 客货运枢纽
+river-channel 内河航道
+port 港口码头
+etc 公路ETC
+resource 公路流量
+public-transport 公共交通
+road-traffic 道路客货运量
+port-container 水路运输客货量
+port-throughput 港口吞吐量
